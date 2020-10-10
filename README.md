@@ -14,7 +14,7 @@
 <p align="center">
   <a href="https://github.com/Zalbani/my-front/commits/master" alt="LastCommit"><img src="https://img.shields.io/github/last-commit/Zalbani/my-front?style=flat-square" /></a>
   <a href="http://hits.dwyl.com/Zalbani/my-front" alt="HitCount"><img src="http://hits.dwyl.com/Zalbani/my-front.svg" /></a>
-  <a href="https://app.netlify.com/sites/condescending-wescoff-06a3b4/deploys" alt="Netlify Status"><img src="https://api.netlify.com/api/v1/badges/70255c85-0d37-4ebb-887b-ce1618209bb1/deploy-status" /></a>
+  <a href="https://app.netlify.com/sites/boring-hermann-85ab61/deploys" alt="Netlify Status"><img src="https://api.netlify.com/api/v1/badges/4e327a95-9d37-48cd-9354-5c3ddeb5179d/deploy-status" /></a>
 </p>
 
 # My-Front
