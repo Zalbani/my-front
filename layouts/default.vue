@@ -1,9 +1,18 @@
 <template>
   <div>
+    <component-menu />
     <Nuxt />
   </div>
 </template>
+<script>
+import componentMenu from '~/components/Menu'
 
+export default {
+  components: {
+    componentMenu
+  }
+}
+</script>
 <style>
 html {
   font-family:
