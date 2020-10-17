@@ -9,18 +9,24 @@
         <div class="hamburger-inner" />
       </div>
     </div>
-    <div class="random">
-      <p>Title</p>
-    </div>
     <ul>
-      <li>hello</li>
-      <li>hello</li>
-      <li>hello</li>
+      <li class="selected">
+        <span class="icon-azurepipelines" /> hello
+      </li>
+      <li>
+        <span class="icon-azurepipelines" /> hello
+      </li>
+      <li>
+        <span class="icon-azurepipelines" /> Coucou
+      </li>
+      <li>
+        <span class="icon-azurepipelines" />hello
+      </li>
     </ul>
   </nav>
 </template>
 <style lang="sass" scoped>
-$topDivHeight: 120px
+$topDivHeight: 0px
 $hamburgerBoxWidth: 20px
 $hamburgerBoxHeight: 20px
 $hamburgerBoxPadding: 20px
@@ -124,29 +130,49 @@ nav
   background-color: white
   box-shadow: 0 0 2rem 0 rgba(136,152,170,.15)
   border-color: rgba(0,0,0,.05)
+  overflow: hidden
   &.active
-    transform: translateX(-140px)
-  .random
-    width: 100%
-    height: $topDivHeight
-    position: absolute
-    display: flex
-    justify-content: center
-    align-items: center
-    //background-color: lightcoral
-    color: red
+    width: 60px
+    ul li, ul li.selected
+      color: white
   ul
     display: flex
     align-items: center
-    margin: 20px
+    margin: 10px
     height: calc(100vh - #{$topDivHeight})
     flex-direction: column
     justify-content: center
+    padding: 0
     li
       display: flex
       width: 100%
-      padding: 20px 0
+      padding: 20px 10px
+      height: 60px
       color: black
+      position: relative
+      background-color: white
+      border-radius: 8px
+      transition-duration: 0.5s
+      transition-timing-function: ease
+      &:hover
+        background-color: #F0F0F5
+      &.selected
+        color: red
+        &:before
+          transition-duration: 0.5s
+          transition-timing-function: ease
+          content: ''
+          position: absolute
+          width: 2px
+          left: -10px
+          top: 0
+          border-radius: 1px
+          height: 60px
+          background-color: red
+    span
+      padding: 0 20px 0 0
+      font-size: .9375rem
+      line-height: 1.5rem
 </style>
 <script>
 export default {
