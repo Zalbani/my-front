@@ -11,16 +11,16 @@
     </div>
     <ul>
       <li class="selected">
-        <span class="icon-azurepipelines" /> hello
+        <span class="icon-dev-dot-to" /> hello
       </li>
       <li>
-        <span class="icon-azurepipelines" /> hello
+        <span class="icon-google" /> hello
       </li>
       <li>
-        <span class="icon-azurepipelines" /> Coucou
+        <span class="icon-docker" /> Coucou
       </li>
       <li>
-        <span class="icon-azurepipelines" />hello
+        <span class="icon-github" />hello
       </li>
     </ul>
   </nav>
@@ -146,14 +146,15 @@ nav
     li
       display: flex
       width: 100%
-      padding: 20px 10px
-      height: 60px
+      padding: 10px
+      margin: 10px 0
       color: black
       position: relative
       background-color: white
       border-radius: 8px
       transition-duration: 0.5s
       transition-timing-function: ease
+      font-size: .9375rem
       &:hover
         background-color: #F0F0F5
       &.selected
@@ -167,12 +168,12 @@ nav
           left: -10px
           top: 0
           border-radius: 1px
-          height: 60px
+          height: 37px
           background-color: red
     span
-      padding: 0 20px 0 0
+      color: black
+      padding: 1px 20px 0 2px
       font-size: .9375rem
-      line-height: 1.5rem
 </style>
 <script>
 export default {
