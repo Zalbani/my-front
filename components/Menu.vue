@@ -22,29 +22,29 @@
       </li>
       <li>
         <nuxt-link to="/">
-          <span class="icon-docker" /> Coucou
+          <span class="icon-docker" /> -
         </nuxt-link>
       </li>
       <li>
         <nuxt-link to="/">
-          <span class="icon-github" />hello
+          <span class="icon-github" /> -
         </nuxt-link>
       </li>
       <hr>
       <p>Documentation</p>
       <li>
         <a href="">
-          <span class="icon-github" />hello
+          <span class="icon-github" /> -
         </a>
       </li>
       <li>
         <a href="">
-          <span class="icon-github" />hello
+          <span class="icon-github" /> -
         </a>
       </li>
       <li>
         <a href="">
-          <span class="icon-github" />hello
+          <span class="icon-github" /> -
         </a>
       </li>
     </ul>

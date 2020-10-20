@@ -5,9 +5,6 @@
       <h1 class="title">
         my-front
       </h1>
-      <p class="oh">
-        Hello
-      </p>
       <div class="links">
         <a
           href="https://nuxtjs.org/"

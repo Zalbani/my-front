@@ -49,6 +49,9 @@ $ yarn start
 # generate static project
 $ yarn generate
 
+# generate css from sass file
+$ yarn sass-watch
+
 # run test
 
 ```
