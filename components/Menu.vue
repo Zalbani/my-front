@@ -10,7 +10,7 @@
       </div>
     </div>
     <ul>
-      <li class="selected">
+      <li>
         <nuxt-link to="/">
           <span class="icon-dev-dot-to" /> Home
         </nuxt-link>
@@ -182,11 +182,14 @@ nav
       white-space: nowrap
       &:hover
         background-color: #F0F0F5
-      &.selected
-        color: red
-        &:before
-          transition-duration: 0.5s
-          transition-timing-function: ease
+      a
+        text-decoration: none
+        color: inherit
+        display: inherit
+        width: 100%
+        padding: 10px
+        position: relative
+        &.exact-active-link:before
           content: ''
           position: absolute
           width: 2px
@@ -195,12 +198,6 @@ nav
           border-radius: 1px
           height: 37px
           background-color: red
-    a
-      text-decoration: none
-      color: inherit
-      display: inherit
-      width: 100%
-      padding: 10px
       span
         color: black
         padding: 1px 20px 0 2px
@@ -226,14 +223,13 @@ nav
 export default {
   data () {
     return {
-      isActive: false
+      isActive: false,
+      test: true
     }
   },
-
   methods: {
     myFilter () {
       this.isActive = !this.isActive
-      // some code to filter users
     }
   }
 }

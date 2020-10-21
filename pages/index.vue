@@ -28,7 +28,23 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      title: 'Page index',
+      meta_desc: 'Je suis le magnifique content'
+    }
+  },
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta_desc }
+      ]
+    }
+  },
+  transition: 'opacity'
+}
 </script>
 
 <style scoped>

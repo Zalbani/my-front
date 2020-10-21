@@ -15,6 +15,10 @@ export default {
     ]
   },
 
+  router: {
+    linkExactActiveClass: 'exact-active-link'
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     'normalize-css/normalize.css',
