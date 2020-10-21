@@ -156,6 +156,7 @@ nav
   box-shadow: 0 0 2rem 0 rgba(136,152,170,.15)
   border-color: rgba(0,0,0,.05)
   overflow: hidden
+  z-index: 1
   &.active
     width: 60px
     ul li, ul li.selected, ul p
