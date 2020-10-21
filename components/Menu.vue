@@ -190,15 +190,20 @@ nav
         width: 100%
         padding: 10px
         position: relative
-        &.exact-active-link:before
+        &:before
           content: ''
           position: absolute
-          width: 2px
+          width: 0
           left: -10px
           top: 0
           border-radius: 1px
           height: 37px
+          background-color: white
+          transition-duration: 0.4s
+          transition-timing-function: ease
+        &.exact-active-link:before
           background-color: red
+          width: 2px
       span
         color: black
         padding: 1px 20px 0 2px
