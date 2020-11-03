@@ -21,8 +21,8 @@
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/">
-          <span class="icon-docker" /> -
+        <nuxt-link to="/icons">
+          <span class="icon-docker" /> Icons
         </nuxt-link>
       </li>
       <li>

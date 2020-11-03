@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "name": "icon-arduino",
+    "content": "e900",
+    "color": "#00979d"
+  },
+  {
+    "id": 1,
+    "name": "icon-azurepipelines",
+    "content": "e901",
+    "color": "#2560e0"
+  },
+  {
+    "id": 2,
+    "name": "icon-codecov",
+    "content": "e902",
+    "color": "#f01f7a"
+  },
+  {
+    "id": 3,
+    "name": "icon-dev-dot-to",
+    "content": "e903"
+  },
+  {
+    "id": 4,
+    "name": "icon-digg",
+    "content": "e904"
+  },
+  {
+    "id": 5,
+    "name": "icon-docker",
+    "content": "e905",
+    "color": "#1488c6"
+  },
+  {
+    "id": 6,
+    "name": "icon-drone",
+    "content": "e906"
+  },
+  {
+    "id": 7,
+    "name": "icon-github",
+    "content": "e907"
+  },
+  {
+    "id": 8,
+    "name": "icon-google",
+    "content": "e908",
+    "color": "#4285f4"
+  },
+  {
+    "id": 9,
+    "name": "icon-ionic",
+    "content": "e909",
+    "color": "#3880ff"
+  },
+  {
+    "id": 10,
+    "name": "icon-mega",
+    "content": "e90a",
+    "color": "#d9272e"
+  },
+  {
+    "id": 11,
+    "name": "icon-messenger",
+    "content": "e90b",
+    "color": "#d9272e"
+  },
+  {
+    "id": 12,
+    "name": "icon-microsoftword",
+    "content": "e90c",
+    "color": "#2b579a"
+  },
+  {
+    "id": 13,
+    "name": "icon-mozillafirefox",
+    "content": "e90d",
+    "color": "#ff7139"
+  }
+]
