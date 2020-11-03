@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <v-app>
     <component-menu />
     <Nuxt />
-  </div>
+  </v-app>
 </template>
 <script>
 import componentMenu from '~/components/Menu'

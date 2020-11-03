@@ -22,7 +22,6 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     'normalize-css/normalize.css',
-    '@/assets/bootstrap-grid.css',
     '@/assets/general.css',
     '@/assets/icons/icons.css'
   ],
@@ -36,6 +35,7 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
+    '@nuxtjs/vuetify',
     '@nuxtjs/eslint-module'
   ],
 

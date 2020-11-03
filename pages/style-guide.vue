@@ -1,6 +1,8 @@
 <template>
-  <div class="container">
-    <div class="main col-md-6 col-md-offset-3">
+  <v-container
+    fluid="true"
+  >
+    <div class="main col-md-8 offset-md-2">
       <div class="card">
         <div class="card-header">
           <h3>Heading</h3>
@@ -26,7 +28,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>

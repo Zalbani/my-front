@@ -26,8 +26,8 @@
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/">
-          <span class="icon-github" /> -
+        <nuxt-link to="/vutify-test">
+          <span class="icon-github" /> Data tables
         </nuxt-link>
       </li>
       <hr>

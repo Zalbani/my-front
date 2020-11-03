@@ -1,5 +1,7 @@
 <template>
-  <div class="container">
+  <v-container
+    :fluid="true"
+  >
     <div>
       <Logo />
       <h1 class="title">
@@ -24,7 +26,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>
