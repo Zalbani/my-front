@@ -9,6 +9,9 @@
           <div
             v-for="(icon, index) in dataIcons"
             :key="'icon_' + index"
+            v-clipboard:copy="'<span class=\'' + icon.name + '\'/>'"
+            v-clipboard:success="onCopy"
+            v-clipboard:error="onError"
             class="icon"
           >
             <span :class="icon.name" />
@@ -28,6 +31,14 @@ export default {
       title: 'Page style guide',
       meta_desc: 'Je suis le magnifique content',
       dataIcons
+    }
+  },
+  methods: {
+    onCopy (e) {
+      alert('You just copied: ' + e.text)
+    },
+    onError (e) {
+      alert('Failed to copy texts')
     }
   },
   head () {
