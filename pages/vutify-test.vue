@@ -1,26 +1,22 @@
 <template>
-  <v-container
-    fluid="true"
-  >
-    <div class="main col-md-8 offset-md-2">
-      <v-card>
-        <v-card-title>
-          <v-text-field
-            v-model="search"
-            append-icon="mdi-magnify"
-            label="Search"
-            single-line
-            hide-details
-          />
-        </v-card-title>
-        <v-data-table
-          :headers="headers"
-          :items="desserts"
-          :search="search"
+  <div class="main col-md-8 offset-md-2">
+    <v-card>
+      <v-card-title>
+        <v-text-field
+          v-model="search"
+          append-icon="mdi-magnify"
+          label="Search"
+          single-line
+          hide-details
         />
-      </v-card>
-    </div>
-  </v-container>
+      </v-card-title>
+      <v-data-table
+        :headers="headers"
+        :items="desserts"
+        :search="search"
+      />
+    </v-card>
+  </div>
 </template>
 <script>
 export default {

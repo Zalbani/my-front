@@ -1,26 +1,22 @@
 <template>
-  <v-container
-    fluid="true"
-  >
-    <div class="card col-md-8 offset-md-2">
-      <div class="card-header">
-        <h3>List icons</h3>
-      </div>
-      <div class="card-body">
-        <div
-          v-for="(icon, index) in dataIcons"
-          :key="'icon_' + index"
-          v-clipboard:copy="'<span class=\'' + icon.name + '\'/>'"
-          v-clipboard:success="onCopy"
-          v-clipboard:error="onError"
-          class="icon"
-        >
-          <span :class="icon.name" />
-          <p>{{ icon.name }}</p>
-        </div>
+  <div class="card col-md-8 offset-md-2">
+    <div class="card-header">
+      <h3>List icons</h3>
+    </div>
+    <div class="card-body">
+      <div
+        v-for="(icon, index) in dataIcons"
+        :key="'icon_' + index"
+        v-clipboard:copy="'<span class=\'' + icon.name + '\'/>'"
+        v-clipboard:success="onCopy"
+        v-clipboard:error="onError"
+        class="icon"
+      >
+        <span :class="icon.name" />
+        <p>{{ icon.name }}</p>
       </div>
     </div>
-  </v-container>
+  </div>
 </template>
 <script>
 import dataIcons from '~/static/data/icons.json'

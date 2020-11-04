@@ -1,7 +1,5 @@
 <template>
-  <v-container
-    :fluid="true"
-  >
+  <div class="center-here">
     <div>
       <Logo />
       <h1 class="title">
@@ -26,7 +24,7 @@
         </a>
       </div>
     </div>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -50,7 +48,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.center-here {
   background-color: #f8f9fe ;
   min-height: 100vh;
   display: flex;

@@ -1,7 +1,12 @@
 <template>
   <v-app>
     <component-menu />
-    <Nuxt />
+    <v-container
+      fluid
+      tag="main"
+    >
+      <Nuxt />
+    </v-container>
   </v-app>
 </template>
 <script>
