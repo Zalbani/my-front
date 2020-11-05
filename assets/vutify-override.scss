@@ -3,7 +3,7 @@
 // @override vutify property
 .container.container--fluid{
   background-color: $bg-color;
-  margin-left: 60px;
+  margin: 80px 0 0 60px;
   width: calc(100% - 60px);
   min-height: 100vh;
 }

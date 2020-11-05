@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <component-menu />
+    <component-top-bar />
     <v-container
       fluid
       tag="main"
@@ -11,10 +12,12 @@
 </template>
 <script>
 import componentMenu from '~/components/Menu'
+import componentTopBar from '~/components/TopBar'
 
 export default {
   components: {
-    componentMenu
+    componentMenu,
+    componentTopBar
   }
 }
 </script>
