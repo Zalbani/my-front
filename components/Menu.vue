@@ -34,12 +34,13 @@
       <p>Documentation</p>
       <li>
         <a href="">
-          <span class="icon-file_copy" /> Getting started
+          <span class="icon-nuxt-dot-js" /> Getting started
         </a>
       </li>
       <li>
         <a href="">
-          <span class="icon-github" /> -
+          <span class="icon-api-platforme"><span class="path1" /><span class="path2" /><span class="path3" /><span class="path4" /><span class="path5" /><span class="path6" /><span class="path7" /><span class="path8" /><span class="path9" /><span class="path10" /><span class="path11" /><span class="path12" /><span class="path13" /><span class="path14" /><span class="path15" /><span class="path16" /><span class="path17" /><span class="path18" /><span class="path19" /><span class="path20" /><span class="path21" /><span class="path22" /><span class="path23" /><span class="path24" /><span class="path25" /><span class="path26" /><span class="path27" /><span class="path28" /><span class="path29" /><span class="path30" /><span class="path31" /><span class="path32" /><span class="path33" /><span class="path34" /></span>
+          API
         </a>
       </li>
       <li>
@@ -247,7 +248,7 @@ span {
             width: 0;
             left: -10px;
             top: 0;
-            border-radius: 1px;
+            border-radius: 0 2px 2px 0;
             height: 40px;
             background-color: white;
             transition-duration: 0.4s;
@@ -256,7 +257,7 @@ span {
           &.exact-active-link{
             &:before {
               background-color: $primary!important;
-              width: 2px;
+              width: 4px;
             }
             //span{
             //  color: $primary;
@@ -266,8 +267,15 @@ span {
 
         span {
           color: black;
-          padding: 3px 20px 0 1px;
           font-size: 1rem;
+          padding: 3px 20px 0 1px;
+          span{
+            padding: 0;
+          }
+          &.icon-api-platforme{
+            padding: 2px 18px 0 0;
+            margin-left: -4px;
+          }
         }
       }
 

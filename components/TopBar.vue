@@ -13,10 +13,6 @@
           >
         </div>
       </form>
-      <div class="profile">
-        <img src="../static/images/user.jpg">
-        <p>John Doe</p>
-      </div>
     </div>
     <div class="bottom-element">
       <div class="breadcrum">
@@ -37,7 +33,7 @@
   padding: 1rem 1rem;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: $primary;
   color: white;
@@ -62,22 +58,6 @@
         padding: 0.5rem 0.5rem;
         width: 100%;
       }
-    }
-  }
-  .profile{
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    align-items: center;
-    img{
-      font-size: .875rem;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-    }
-    p{
-      align-items: center;
-      margin:0 0 0 0.5rem;
     }
   }
 }

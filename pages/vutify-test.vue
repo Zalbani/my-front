@@ -1,5 +1,5 @@
 <template>
-  <div class="main col-md-8 offset-md-2">
+  <div class="col-md-10 offset-md-1">
     <v-card>
       <v-card-title>
         <v-text-field
@@ -16,8 +16,38 @@
         :search="search"
       />
     </v-card>
+    <v-card>
+      <v-card-title>
+        <v-text-field
+          v-model="search"
+          append-icon="mdi-magnify"
+          label="Search"
+          single-line
+          hide-details
+        />
+      </v-card-title>
+      <v-data-table
+        :headers="headers"
+        :items="desserts"
+        class="elevation-1"
+      >
+        <template v-slot:item.calories="{ item }">
+          <v-chip
+            :color="getColor(item.calories)"
+            dark
+          >
+            {{ item.calories }}
+          </v-chip>
+        </template>
+      </v-data-table>
+    </v-card>
   </div>
 </template>
+<style scoped>
+.v-card{
+  margin: 20px 0;
+}
+</style>
 <script>
 export default {
   data () {
@@ -27,6 +57,7 @@ export default {
         {
           text: 'Dessert (100g serving)',
           align: 'start',
+          sortable: false,
           value: 'name'
         },
         { text: 'Calories', value: 'calories' },
@@ -117,6 +148,11 @@ export default {
           iron: '6%'
         }
       ]
+    }
+  },
+  methods: {
+    getColor (calories) {
+      if (calories > 400) { return 'red' } else if (calories > 200) { return 'orange' } else { return 'green' }
     }
   }
 }
