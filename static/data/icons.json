@@ -121,5 +121,20 @@
     "id": 22,
     "name": "icon-vue-dot-js",
     "content": "e937"
+  },
+  {
+    "id": 23,
+    "name": "icon-info",
+    "content": "e938"
+  },
+  {
+    "id": 24,
+    "name": "icon-log-out",
+    "content": "e939"
+  },
+  {
+    "id": 25,
+    "name": "icon-power",
+    "content": "e940"
   }
 ]

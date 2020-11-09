@@ -50,9 +50,9 @@
           API
         </a>
       </li>
-      <li>
-        <a href="">
-          <span class="icon-github" /> -
+      <li class="deconexion">
+        <a href="/">
+          <span class="icon-log-out" /> Deconexion
         </a>
       </li>
     </ul>
@@ -236,9 +236,25 @@ span {
         transition-timing-function: ease;
         font-size: .9375rem;
         white-space: nowrap;
-
+        span{
+          transition-duration: 0.5s;
+          transition-timing-function: ease;
+        }
         &:hover {
           background-color: #F0F0F5;
+        }
+        &:last-of-type{
+          position: absolute;
+          bottom: 0;
+          left: 10px;
+          width: calc(100% - 20px);
+          &:hover {
+            background-color: $red;
+            color: white;
+            span{
+              color: white;
+            }
+          }
         }
 
         a {
@@ -248,7 +264,6 @@ span {
           width: 100%;
           padding: 10px;
           position: relative;
-
           &:before {
             content: '';
             position: absolute;
