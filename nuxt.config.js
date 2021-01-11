@@ -1,6 +1,7 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
-  target: 'static',
+  target: 'server',
+  ssr: true,
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -35,14 +36,19 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     '@nuxtjs/vuetify',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/moment'
   ],
+  moment: {
+    locales: ['fr']
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
+    '@nuxtjs/auth',
     'nuxt-clipboard2'
   ],
   styleResources: {
@@ -50,7 +56,31 @@ export default {
       '@/assets/variables.scss'
     ]
   },
-  axios: {},
+  vuetify: {
+    theme: {
+      light: true,
+      themes: {
+        light: {
+          primary: '#f7c109',
+          secondary: '#ff645f'
+        }
+      }
+    }
+  },
+  axios: {
+    baseURL: process.env.backend_url || 'http://localhost:3001'
+  },
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: 'token', method: 'post', propertyName: 'token' },
+          user: { url: 'user/current', method: 'get', propertyName: '' },
+          logout: false
+        }
+      }
+    }
+  },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     extend (config, ctx) {

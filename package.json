@@ -13,7 +13,9 @@
     "sass-watch": "sass --watch assets/general.scss:assets/general.css assets/vutify-override.scss:assets/vutify-override.css"
   },
   "dependencies": {
+    "@nuxtjs/auth": "^4.9.1",
     "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/pwa": "^3.0.2",
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/vuetify": "^1.11.2",
